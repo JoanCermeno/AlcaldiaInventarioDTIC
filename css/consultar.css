@@ -1,0 +1,59 @@
+.container__table{
+
+	overflow-y: auto;
+}
+.barra__busqueda{
+	display: flex;
+	justify-content: flex-start;
+	padding-bottom:20px; 
+}
+label{
+	text-align: center;
+	font-family: ubuntu;
+	font-style: oblique;
+	font-size: 18px;
+	margin-right: 15px;
+}
+.barra__busqueda > input{
+
+}
+
+.tabla__lista_general , .row__items{
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.par{
+	background: #C1C1C1;
+}
+.impar{
+	transition: 1s;
+}
+.impar:hover{
+	background: #7798FF;
+	cursor: pointer;
+}
+
+.tabla__encabezado{
+	background: #78E6FF;
+	padding: 1px 10px;
+	border-spacing: 0;
+	text-indent: 10px;
+}
+
+.btn__buscar_por{
+	color:white;
+	font-size: 15px;
+	width: 70px;
+	background: #2CB511;
+	height: 20px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	outline: none;
+}
+.btn__buscar_por:hover{
+	background: #05FF0E;
+	cursor: pointer;
+
+}
+

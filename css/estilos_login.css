@@ -1,0 +1,116 @@
+	body{
+        		margin: 0;
+        		padding: 0;
+        		font-family: arial, sans-serif;
+        	}
+        	section{
+  				display: flex;
+  				justify-content: space-between;
+        		height: 100vh;
+        		width: 100%;
+
+        	}
+
+        	.area_left{
+        		width: 50%;
+        	
+        	}
+
+        	.area_right{
+              	width: 50%;
+     
+          	}
+
+
+
+
+
+form{
+	display: flex;
+	flex-direction: column;
+	border-radius: 1px solid red;
+	background: #bfb;
+	height: 100vh;
+	box-shadow: 10px 10px 10px 10px #000;
+}
+form > input{
+	width: 70%;
+	margin: 10px auto;
+	color: #132295;
+	padding: 10px 5px;
+	border-radius: 40px;
+	background: rgba(250, 250, 250, .8);
+	outline: none;
+	border-style: none;
+	transition: .5s;
+
+
+}
+.input__login:focus{
+
+	color: black;
+	box-shadow: 1px 1px 10px 2px white;
+
+ }
+
+
+#enviar{
+
+	background: #41E153;
+	border: none;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	width: 50%;
+}
+#enviar:hover{
+	cursor: pointer;
+	background: #11B931;
+	box-shadow: 0px 0px 1px 1px #51E153;
+
+}
+#enviar:active{
+	color: black;
+	box-shadow: 2px 2px 2px 1px white;
+	transform: scale(.8);
+}
+
+
+.icon{
+	font-size: 100px;
+	margin: 20px auto;
+	width: 100px;
+	height: 100px;
+	background-image: url(img/claro.svg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50px;
+	  
+}
+.header_form{
+
+	text-align: center;
+	font-size: 18pt;
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+.header_form p{
+	font-family: ubuntu;
+	font-size: 12pt;
+	text-transform: capitalize;
+	text-indent: 5%;
+	text-align: left;
+	padding: 0px 5%;
+	
+}
+
+.hidden{
+	display: none;
+}
+
+.alert{
+	font-size: 10pt;
+	font-family: sans-serif;
+	text-align: center;
+	color: #b00;
+}

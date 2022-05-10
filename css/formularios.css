@@ -1,0 +1,164 @@
+.form_entrada{
+	background: #fff;
+	width: 70%;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+	padding: 10px 20px;
+	font-family: arial , sans-serif;
+	text-align: center;
+	position: relative;
+	top: 10%;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+.fomr_header{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 25%;
+}
+.title_header > p{
+	font-size: 12pt;
+
+}
+#btn_close{
+	position: absolute;
+	right: 5%;
+	
+}
+.form_entrada > input{
+	width: 70%;
+	margin: 10px auto 0px auto;
+	color: #000e;
+	padding: 10px 5px;
+	background: #eee;
+	outline: none;
+	border: 1px solid #0afe;
+	transition: .5s;
+
+}
+.form_entrada > input:focus{
+	box-shadow: 0px 0px 0px 2px #08f;
+	background: #fff;
+
+
+}
+.input__login:focus{
+
+	color: black;
+	box-shadow: 1px 1px 10px 2px white;
+
+ }
+
+
+#enviar{
+	margin: 25px auto;
+	background: #0afe;
+	border: none;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	width: 50%;
+	border-radius: 10px;
+}
+#enviar:hover{
+	cursor: pointer;
+	background: #08f;
+	box-shadow: 0px 0px 1px 1px #51E153;
+
+}
+#enviar:active{
+	color: black;
+	box-shadow: 2px 2px 2px 1px white;
+	transform: scale(.8);
+}
+textarea{
+	width: 70%;
+	margin: auto;
+	max-height: 80px;
+	resize: none;
+	outline: none;
+	height: 70px;
+	box-sizing: border-box;
+	background: #eee;
+	border: 1px solid #0afe;
+
+	
+}
+textarea:focus{
+	box-shadow: 0px 0px 0px 2px #08f;
+	background: #fff;
+	
+}
+.form_entrada > h1{
+	font-family: arial , sans-serif;
+	font-size: 25pt;
+	text-align: center;
+}
+label{
+	font-size: 12pt;
+	width: 70%;
+	margin: 30px auto 0px auto;
+
+	text-align: left;
+}
+small{
+	color: #999;
+	width: 70%;
+	margin: 5px auto 0px auto;
+	text-align: left;
+}
+
+.form_entrada > .container__card{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 90%;
+	padding: 0px;
+}
+.form_entrada > .container__card > .card{
+	border: none;
+	background: transparent;
+}
+
+.form_entrada > .container__card > .card > h2{
+	font-size: 15pt;
+	font-family: sans-serif;
+
+}
+.container__card >  h5{
+	color: #666;
+	font-family: sans-serif;
+	margin: auto 2%;
+}
+
+.container__card > .btn{
+	width: 80%;
+	border:  none;
+	cursor: pointer;
+	margin: 10px auto;
+	text-decoration: none;
+	color: #444;
+	background: #e1ebeb;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.container__card > .btn:nth-child(3):hover{
+	background: #f4e8;
+	
+}
+.container__card > .btn:nth-child(1):hover{
+	background: #4fe8;
+
+}
+
+.select{
+	width: 70%;
+	margin: 0px auto;
+	height: 30px;
+	background: #eee;
+	border: 1px solid #0afe;
+	
+}
