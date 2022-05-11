@@ -4,6 +4,9 @@
 
 }
 
+body{
+	background-color: rgb(244, 241, 241);
+}
 .Desktop{
 	background: #fff;
 	height: 70px;
@@ -138,5 +141,4 @@ ul{
 #check{
 	display: none;
 }
-
 

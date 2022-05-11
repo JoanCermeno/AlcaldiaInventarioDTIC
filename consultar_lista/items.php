@@ -2,6 +2,7 @@
 	include_once ('../nav_bar/nav_bar.php');
 ?>
 <link rel="stylesheet" type="text/css" href="../css/tablas.css">
+<link rel="stylesheet" type="text/css" href="../css/btn.css">
 <div class="container__table">
 	<div class="barra__busqueda">
 		<label for="buscar">BUSCAR POR</label>
@@ -27,7 +28,7 @@
 		  	
 		  </tr>
 	</table>
-
+	<div class="container_btn"></div>
 </div>
 
 

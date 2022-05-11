@@ -1,13 +1,19 @@
 .container__table{
 	margin: 20px auto;
 	width: 90%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .table{
+
   overflow-y: auto;
 	border-collapse: collapse;
   width: 100%;
   text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px rgba(22, 22, 22, 0.661);
+
 }
 
 .table td, .table th {
@@ -15,14 +21,16 @@
   padding: 8px;
 }
 
-.table tr:nth-child(2){
-  background-color: #bbb;
-  
+.table tbody:nth-child(even){
+  background-color: #eee;
+  text-decoration: none;  
 }
-.table tr {
+.row{
   font-family: sans-serif;
+  font-size: 9pt;
+
 }
-.table tr:hover {background-color: #ddd;}
+.table tr:hover {background-color: rgb(95, 215, 255);}
 
 .table th {
   padding-top: 12px;
@@ -32,6 +40,7 @@
   color: white;
   font-family: sans-serif;
   font-weight: lighter;
+ 
 }
 
 .hidden{

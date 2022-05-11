@@ -10,6 +10,8 @@
 /*	var_dump($sql_result);*/
 ?>
 <link rel="stylesheet" type="text/css" href="../css/tablas.css">
+<link rel="stylesheet" type="text/css" href="../css/btn.css">
+
 <div class="container__table">
 	<div class="barra__busqueda">
 		<label for="buscar">BUSCAR POR</label>
@@ -30,13 +32,14 @@
 			    <th>Fecha Registro</th>
 			    <th>Atendido</th>
 			</tr>
+		
 		  <tr class="row">
 
 		  </tr>
 
 		  
 	</table>
-
+	<div class="container_btn"></div>
 </div>
 <script type="text/javascript" src="get_people.js"></script>
 <script type="text/javascript" src="filter_people.js"></script>

@@ -22,9 +22,8 @@
 				<div class="bar_menu"></div>
 				<div class="bar_menu"></div>
 			</label>
-			<span class="title" class="ocultar" ><b>SISTEMA APP</b></span>
-			<div class="info__user">
-				
+			<span class="title" class="ocultar" ><b>APP</b></span>
+			<div class="info__user">				
 				<div class="name_profile"> 
 					<?php
 						echo $_SESSION['admin']; 
@@ -32,7 +31,7 @@
 				</div>
 			</div>
 		</ul>
-		<nav class="ocultar" class="nav_opciones" id="slider">
+		<nav class="ocultar" class="nav_opciones" id="slider">	
 			<li><a href="../index.php" class="btn__opc">Inicio</a></li>
 			<div class="separador"> <span>Nuevo</span> </div>
 			<li><a href="../people/" class="btn__opc">Agregar Persona</a></li>

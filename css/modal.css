@@ -5,6 +5,8 @@
 	height: 100%;
 	width: 100%;
 	z-index: 10;
+	box-shadow: 0px 0px 15px rgba(59, 59, 59, 0.546);
+
 }
 
 .hidden{
@@ -24,11 +26,8 @@
 	top: 10%;
 	border-radius: 10px;
 	margin-bottom: 20px;
+	box-shadow: 0px 0px 15px rgba(59, 59, 59, 0.546);
 
-}
-
-.btn_close{
-	
 }
 
 .btn_close{

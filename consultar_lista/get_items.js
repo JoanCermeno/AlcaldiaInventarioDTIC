@@ -1,5 +1,6 @@
 /*SE MNDA EL PARAMETRO clear PARA SABER SI SE VA A CONCATENAR UNA NUEVA FILA O SI SE VAN A OCULTAR LAS EXISTENTES*/
 const fila = document.querySelector('.table');
+const container_btn = document.querySelector('.container_btn');
 const pait_row = (n, get = false) => {
 	/*	n ES EL NUEMERO DE ELMENTOS DENTRO DEL JSON DEUVELTA POR LA API*/
 	if (n == 0) {
@@ -62,6 +63,8 @@ fetch('../api/items.php')
 		}
 		if (get_value) {
 			console.log("SI EXITE GET" + get_value);
+			container_btn.innerHTML = `<a href="../api/editar_items.php?ed=${get_value}" class="btn edit">Editar</a>
+			<a href="#" class="btn delate">Eliminar</a>`;
 			pait_row(AllItems, get_value);
 		} else {
 			console.log("COMO GET NO EXISTE PINTAMOS LA TABLA");

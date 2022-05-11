@@ -1,5 +1,7 @@
 /*SE MNDA EL PARAMETRO clear PARA SABER SI SE VA A CONCATENAR UNA NUEVA FILA O SI SE VAN A OCULTAR LAS EXISTENTES*/
 const fila = document.querySelector('.table');
+const container_btn = document.querySelector('.container_btn');
+
 
 
 const pait_row = (n, get = false) => {
@@ -56,6 +58,9 @@ fetch('../api/people.php')
 		}
 		if (get_value) {
 			console.log("SI EXITE GET" + get_value);
+			// rutina para crear los botones de editar y eliminair people
+			container_btn.innerHTML = `<a href="../api/editar_people.php" class="btn edit">Editar</a>
+			<a href="#" class="btn delate">Eliminar</a>`;
 			pait_row(AllItems, get_value);
 		} else {
 			console.log("COMO GET NO EXISTE PINTAMOS LA TABLA");
