@@ -2,7 +2,7 @@
 	if(isset($_GET['response'])){
 		switch ($_GET['response']) {
 			case '1':echo '';
-					break;
+					break; 
 			case '200' : echo '';
 			    break;
 					default:
