@@ -1,3 +1,16 @@
+<?php
+	if(isset($_GET['response'])){
+		switch ($_GET['response']) {
+			case '1':echo '';
+					break;
+			case '200' : echo '';
+			    break;
+					default:
+					echo "CODIGO DE ERRO DESCONOCIDO";
+					break;
+		}
+	}
+?>
 <link rel="stylesheet" href="../css/formularios.css">
 <form class="form_entrada"  method="POST" action="">
 	<section class="fomr_header">

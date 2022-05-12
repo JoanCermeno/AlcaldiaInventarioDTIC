@@ -15,7 +15,7 @@ function editar_item($name,$description,$code_inventario,$id)
     # code...
     if($code_inventario){
         include '../conexion.php'; 
-        $sql = 'UPDATE items SET name = :name, description = :description, code_inventario = :code_inventario WHERE items.id = ?';
+        $sql = 'UPDATE items SET name = :name, description = :description, code_inventario = :code_inventario WHERE items.id = :id';
         $query = $pdo -> prepare($sql);
         $data = [
             ':name' => $name,
@@ -27,8 +27,8 @@ function editar_item($name,$description,$code_inventario,$id)
     
     
         if($query_executed){
-            echo '<script>alert("Se ha editado correctamente")</script>';
-          
+            header('location:form_editar.php?response=200');
+            die();
         }else{
             echo '<script>alert("ERROR ! EL EQUIPO NO SE HA PODIDO MODIFICAR")</script>';
         }
@@ -47,7 +47,7 @@ function editar_item($name,$description,$code_inventario,$id)
     
         if($query_executed){
             echo '<script>alert("Se ha editado correctamente")</script>';
-          
+            die();
         }else{
             echo '<script>alert("ERROR ! EL EQUIPO NO SE HA PODIDO MODIFICAR")</script>';
         }
@@ -58,7 +58,7 @@ function editar_item($name,$description,$code_inventario,$id)
 $item_to_edit = search_item($_GET['ed']);
 
 if($item_to_edit){
-    var_dump($item_to_edit["code_inventario"]);
+    // var_dump($item_to_edit["code_inventario"]);
     //MOSTRAMOS EL FORMULARIO PARA EDITAR EL ITEM
     include_once 'form_editar.php';
     //AHora recogemos los datos y los enviamos a la db
@@ -66,12 +66,12 @@ if($item_to_edit){
 }
 if(isset($_POST['code_inventario'])){
     if($_POST['code_inventario'] == $item_to_edit['code_inventario']){
-        echo "LOS CODIGOS DE INVENTARIO SON IGUALES";
+        // echo "LOS CODIGOS DE INVENTARIO SON IGUALES";
         //Si son iguales no modificamos el codigo y solo vamos a modificar los atributos descricition y nombre
         editar_item($_POST['marca_modelo'] , $_POST['description_item'], false , $item_to_edit['id']);
      
      }else{
-        echo "LOS CODIGOS DE INVENTARIO SON DIFERENTES, POR ELLO SE INTENTARA EDITAR TAMBIEN EL CODIGO DE INVETARIO";
+        // echo "LOS CODIGOS DE INVENTARIO SON DIFERENTES, POR ELLO SE INTENTARA EDITAR TAMBIEN EL CODIGO DE INVETARIO";
         editar_item($_POST['marca_modelo'] , $_POST['description_item'], $_POST['code_inventario'] , $item_to_edit['id']);
      
     }
